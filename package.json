@@ -1,0 +1,42 @@
+{
+    "name": "awesom-o",
+    "version": "1.0.0",
+    "description": "Awesome-O orm :)",
+    "main": "index.js",
+    "types": "index.d.ts",
+    "scripts": {
+        "prepublishOnly": "npm run build",
+        "build": "tsc",
+        "test": "mocha -r ts-node/register test/*.ts",
+        "cover": "nyc npm run test",
+        "cover:all": "nyc --all npm run test",
+        "coverage": "nyc --reporter=lcov --reporter=text-summary npm run test"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/Yakubko/awesom-o.git"
+    },
+    "keywords": [],
+    "author": "Jakub Miskech <yakubmiskech@gmail.com>",
+    "license": "ISC",
+    "bugs": {
+        "url": "https://github.com/Yakubko/awesom-o/issues"
+    },
+    "homepage": "https://github.com/Yakubko/awesom-o#readme",
+    "devDependencies": {
+        "@types/chai": "^4.2.11",
+        "@types/mocha": "^7.0.2",
+        "@typescript-eslint/eslint-plugin": "^2.29.0",
+        "@typescript-eslint/parser": "^2.29.0",
+        "chai": "^4.2.0",
+        "coveralls": "^3.1.0",
+        "eslint": "^6.8.0",
+        "eslint-config-prettier": "^6.11.0",
+        "eslint-plugin-prettier": "^3.1.3",
+        "mocha": "^7.1.2",
+        "nyc": "^15.0.1",
+        "prettier": "^2.0.5",
+        "ts-node": "^8.9.1",
+        "typescript": "^3.8.3"
+    }
+}
